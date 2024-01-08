@@ -4,6 +4,8 @@ The first task is simply for setting up a [React] project and learning how to us
 
 ## Task
 
+Create a simple Blog Gallery using the [provided data](./src/data/posts.js). Alternativly find your own dataset and display that.
+
 - **Planning**
   1. Import and flesh out this sketch in Figma. It does not need to be detailed, but you need to make decisions about what should be a component, and which variation you want to support.
     ![Application Sketch](./docs/modul-d-task-1.png)
