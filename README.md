@@ -25,7 +25,10 @@ Create a simple Blog Gallery using the [provided data](./src/data/posts.js). Alt
 3. Atleast two different Card components
 4. Load the data from the [src/data/posts.js](./src/data/posts.js) file
 5. Generate a list of React components from that list
+6. Deploy the site using either [Vercel] or [Netlify]
 
 [React]: https://react.dev/
 [ViteJS]: https://vitejs.dev/
 [NPM]: https://www.npmjs.com/
+[Vercel]: https://vercel.com/
+[Netlify]: https://www.netlify.com/
