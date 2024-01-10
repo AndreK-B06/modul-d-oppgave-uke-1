@@ -1,11 +1,13 @@
 .app {
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
-.navbar > * {
+.app,
+.navbar,
+footer {
   display: flex;
+}
+.navbar > * {
   justify-content: center;
   align-items: center;
   padding: 0.1rem 1rem;
@@ -14,7 +16,9 @@
 .main {
   flex-grow: 1;
 }
-
+.footer {
+  justify-content: center;
+}
 .footer > p {
   text-align: center;
   padding: 1rem 1rem;

@@ -20,7 +20,7 @@ function App() {
             </li>
           </ul>
         </nav>
-
+        <p>Image from Unsplash.com</p>
         <p>Made by Kodehodet 2024</p>
       </footer>
     </div>
