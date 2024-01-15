@@ -10,17 +10,11 @@ function App() {
 
       <main className="main">
         <h1>A blank slate for you to use</h1>
+        {/* <ul className="poste">{PostCardImage}</ul> */}
       </main>
 
       <footer className="footer bg-primary text-secondary">
-        <nav>
-          <ul>
-            <li>
-              <a href=""></a>
-            </li>
-          </ul>
-        </nav>
-        <p>Image from Unsplash.com</p>
+        <a>Image from Unsplash.com</a>
         <p>Made by Kodehodet 2024</p>
       </footer>
     </div>
