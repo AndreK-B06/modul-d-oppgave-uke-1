@@ -1,5 +1,5 @@
 import "./App.css";
-// import PostCardImage from './components/PostCardImage/PostCardImage'
+import PostCardImage from "./components/PostCardImage/PostCardImage";
 
 function App() {
   return (
