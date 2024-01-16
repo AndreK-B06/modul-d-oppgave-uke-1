@@ -8,9 +8,7 @@ export default function PostCardImage(posts) {
   return (
     <article className="cardImage">
       <h2>{posts.posts.title}</h2>
-      <a href={posts.posts.sourceUrl ? posts.posts.sourceUrl : "#"}>
-        source Code
-      </a>
+      <img src={posts.posts.sourceUrl} alt={posts.posts.title} />
       <p>{posts.posts.body}</p>
     </article>
   );
