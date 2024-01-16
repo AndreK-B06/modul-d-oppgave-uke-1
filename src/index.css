@@ -13,29 +13,42 @@ a {
   --color-primary: #6a8eae;
   --color-secondary: #2a282a;
   --color-bacround: #d1faff;
+  --color-cards: #f7f9f7;
 }
 body {
   background: var(--color-bacround);
 }
-/* ! fix primery og secundary */
-.bg-primary {
+/* ---------------
+* Color's and styling
+-------------- */
+.bg-primary,
+.bg-secondary {
   background-color: var(--color-primary);
 }
-.text-primary {
-  color: var(--color-primary);
-}
-
-.bg-secondary {
-  background-color: var(--color-secondary);
-}
+.text-primary,
 .text-secondary {
   color: var(--color-secondary);
 }
-/* * Flex/Alinment */
+.card {
+  background-color: var(--color-cards);
+}
+#brandName {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ------------
+* Flex/Alinment
+------------ */
 header,
 main,
 footer {
   display: flex;
+}
+header,
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 header {
   justify-content: center;
@@ -43,9 +56,13 @@ header {
 footer {
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+h1 {
+  margin: auto;
 }
