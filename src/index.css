@@ -13,25 +13,28 @@ a {
   --color-primary: #6a8eae;
   --color-secondary: #2a282a;
   --color-bacround: #d1faff;
+  --color-cards: #f7f9f7;
 }
 body {
   background: var(--color-bacround);
 }
-/* ! fix primery og secundary */
-.bg-primary {
+/* ---------------
+* Color's and styling
+-------------- */
+.bg-primary,
+.bg-secondary {
   background-color: var(--color-primary);
 }
-.text-primary {
+.text-primary,
+.text-secondary {
   color: var(--color-primary);
 }
-
-.bg-secondary {
-  background-color: var(--color-secondary);
+.card {
+  background-color: var(--color-cards);
 }
-.text-secondary {
-  color: var(--color-secondary);
-}
-/* * Flex/Alinment */
+/* ------------
+* Flex/Alinment
+------------ */
 header,
 main,
 footer {
