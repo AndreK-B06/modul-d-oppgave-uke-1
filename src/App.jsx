@@ -1,9 +1,15 @@
 import "./App.css";
 import PostCardImage from "./components/PostCardImage/PostCardImage";
+import PostCard from "./components/PostCard/PostCard";
 
 function App() {
   const posts = [
-    { title: "My vecation", body: "Best vecation ever!, mett a lot of people" },
+    {
+      title: "My vecation",
+      body: "Best vecation ever!, mett a lot of people",
+      sourceUrl:
+        "https://images.unsplash.com/photo-1564613469739-c78f970f9c17?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
     {
       title: "Insane Party",
       body: "Insane party last night, and now i have an insane hangover",
@@ -21,6 +27,9 @@ function App() {
         <h1>A blank slate for you to use</h1>
         {posts.map((post, i) => {
           return <PostCardImage posts={post} key={i} />;
+        })}
+        {posts.map((post, i) => {
+          return <PostCard posts={post} key={i} />;
         })}
       </main>
 

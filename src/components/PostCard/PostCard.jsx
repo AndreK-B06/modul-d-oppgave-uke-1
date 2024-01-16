@@ -1,18 +1,18 @@
-import { Component } from "react";
-import App from "../../App";
 import "./PostCard.css";
+import propTypes from "prop-types";
 
-const poste = [
-    {title: "Mounten tripp", 
-    body: "Awwsometime at the mounten dis winter"},
-    {title: "Bord",
-    body: "I am sooooo bord at home..."}]
-const PostCard = poste.map(poste) => {
+export default function PostCard(posts) {
   //JS here
+  console.log(posts);
+  console.log(Object.keys(posts));
   return (
-    <article className='card'>
-        <h2>{poste.title}</h2>
-        <p>{poste.body}</p>
+    <article className="card">
+      <img src={posts.posts.sourceUrl} alt={posts.posts.title} />
+      <h2>{posts.posts.title}</h2>
+      <p>{posts.posts.body}</p>
     </article>
   );
 }
+PostCard.propTypes = {
+  posts: propTypes.object,
+};

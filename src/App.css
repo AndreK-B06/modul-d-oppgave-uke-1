@@ -7,10 +7,16 @@
   flex-direction: column;
   justify-content: center;
 }
-h2 {
-  margin-top: 30px;
-}
 article {
   margin: auto;
   max-width: 50%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid black 3px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5px 10px;
 }

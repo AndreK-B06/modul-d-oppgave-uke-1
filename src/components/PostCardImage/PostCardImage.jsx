@@ -6,7 +6,7 @@ export default function PostCardImage(posts) {
   console.log(posts);
   console.log(Object.keys(posts));
   return (
-    <article className="cardImage">
+    <article className="card">
       <h2>{posts.posts.title}</h2>
       <img src={posts.posts.sourceUrl} alt={posts.posts.title} />
       <p>{posts.posts.body}</p>
