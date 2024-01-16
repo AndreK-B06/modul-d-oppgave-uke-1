@@ -1,19 +1,22 @@
 .app {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
-.navbar > * {
-  text-align: center;
-  padding: 0.1rem 1rem;
-}
-
 .main {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.footer > p {
-  text-align: center;
-  padding: 1rem 1rem;
+article {
+  margin: auto;
+  max-width: 50%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid black 3px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5px 10px;
 }

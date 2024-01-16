@@ -3,16 +3,21 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
 :root {
-  --color-primary: rgb(112, 0, 52);
-  --color-secondary: rgb(248, 228, 191);
+  --color-primary: #6a8eae;
+  --color-secondary: #2a282a;
+  --color-bacround: #d1faff;
 }
-
+body {
+  background: var(--color-bacround);
+}
+/* ! fix primery og secundary */
 .bg-primary {
   background-color: var(--color-primary);
 }
@@ -25,4 +30,22 @@ a {
 }
 .text-secondary {
   color: var(--color-secondary);
+}
+/* * Flex/Alinment */
+header,
+main,
+footer {
+  display: flex;
+}
+header {
+  justify-content: center;
+}
+footer {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
