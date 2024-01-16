@@ -22,3 +22,28 @@ article {
   margin-top: 20px;
   padding: 5px 10px;
 }
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 768;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .app,
+  .card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+  .main {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .app,
+  .card {
+    width: 10%;
+  }
+}

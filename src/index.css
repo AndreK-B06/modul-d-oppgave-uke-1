@@ -58,9 +58,6 @@ footer {
   justify-content: space-evenly;
   margin-top: 10px;
 }
-.app {
-  flex-wrap: wrap;
-}
 .main {
   display: flex;
   flex-direction: column;
@@ -68,24 +65,4 @@ footer {
 }
 h1 {
   margin: auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 768;
-  }
-  .app,
-  .main,
-  .card {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    max-width: 1024px;
-  }
-  .app,
-  .main,
-  .card {
-    width: 30%;
-  }
 }
