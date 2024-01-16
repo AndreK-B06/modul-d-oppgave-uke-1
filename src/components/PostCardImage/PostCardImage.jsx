@@ -1,24 +1,20 @@
-import { Component } from "react";
-import App from "../../App";
 import "./PostCardImage.css";
+import propTypes from "prop-types";
 
-const posts = [
-  { title: "My vecation", body: "Best vecation ever!, mett a lot of people" },
-  {
-    title: "Insane Party",
-    body: "Insane party last night, and now i have an insane hangover",
-    sourceUrl:
-      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
-const PostCardImage = posts.map((poste) => {
+export default function PostCardImage(posts) {
   //JS here
+  console.log(posts);
+  console.log(Object.keys(posts));
   return (
-    <article className="card-Image">
-      <h2>{poste.title}</h2>
-      <a href="{poste.sourceTrl}">source Code</a>
-      <p>{poste.body}</p>
+    <article className="cardImage">
+      <h2>{posts.posts.title}</h2>
+      <a href={posts.posts.sourceUrl ? posts.posts.sourceUrl : "#"}>
+        source Code
+      </a>
+      <p>{posts.posts.body}</p>
     </article>
   );
-});
-export default "PostCardImage";
+}
+PostCardImage.propTypes = {
+  posts: propTypes.object,
+};

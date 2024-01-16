@@ -1,25 +1,16 @@
 .app {
-  flex-direction: column;
   min-height: 100vh;
-}
-.app,
-.navbar,
-footer {
-  display: flex;
-}
-.navbar > * {
-  justify-content: center;
-  align-items: center;
-  padding: 0.1rem 1rem;
 }
 
 .main {
-  flex-grow: 1;
-}
-.footer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.footer > p {
-  text-align: center;
-  padding: 1rem 1rem;
+h2 {
+  margin-top: 30px;
+}
+article {
+  margin: auto;
+  max-width: 50%;
 }
