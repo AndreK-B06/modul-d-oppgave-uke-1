@@ -27,11 +27,16 @@ body {
 }
 .text-primary,
 .text-secondary {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 .card {
   background-color: var(--color-cards);
 }
+#brandName {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 /* ------------
 * Flex/Alinment
 ------------ */
@@ -40,15 +45,24 @@ main,
 footer {
   display: flex;
 }
+header,
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 header {
   justify-content: center;
 }
 footer {
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+h1 {
+  margin: auto;
 }

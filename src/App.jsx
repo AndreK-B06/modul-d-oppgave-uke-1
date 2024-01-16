@@ -20,11 +20,13 @@ function App() {
   return (
     <div className="app">
       <header className="navbar bg-primary text-secondary">
-        <a href="/">A blank slate</a>
+        <a href="/" id="brandName">
+          Gosip
+        </a>
       </header>
 
       <main className="main">
-        <h1>A blank slate for you to use</h1>
+        <h1>Welcome to Gosip</h1>
         {posts.map((post, i) => {
           return <PostCardImage posts={post} key={i} />;
         })}
