@@ -25,8 +25,8 @@ function App() {
         </a>
       </header>
 
+      <h1>Welcome to Gosip</h1>
       <main className="main">
-        <h1>Welcome to Gosip</h1>
         {posts.map((post, i) => {
           return <PostCardImage posts={post} key={i} />;
         })}

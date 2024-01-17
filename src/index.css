@@ -42,8 +42,12 @@ body {
 ------------ */
 header,
 main,
-footer {
+footer,
+.app {
   display: flex;
+}
+.app {
+  flex-direction: column;
 }
 header,
 footer {
