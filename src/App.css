@@ -22,7 +22,7 @@ article {
   margin-top: 20px;
   padding: 5px 10px;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
     max-width: 768;
   }
@@ -33,17 +33,14 @@ article {
   .card {
     width: 40%;
   }
-}
-@media screen and (min-width: 1024px) {
+} */
+/* @media screen and (max-width: 1024px) {
   body {
     max-width: 1024px;
   }
-  .main {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
   .app,
+  .main,
   .card {
-    width: 10%;
+    flex-basis: 30%;
   }
-}
+} */
