@@ -1,6 +1,7 @@
 import "./App.css";
 import PostCardImage from "./components/PostCardImage/PostCardImage";
 import PostCard from "./components/PostCard/PostCard";
+import likeConter from "./components/Like/conter";
 
 function App() {
   const posts = [
@@ -33,6 +34,7 @@ function App() {
         {posts.map((post, i) => {
           return <PostCard posts={post} key={i} />;
         })}
+        <likeConter />
       </main>
 
       <footer className="footer bg-primary text-secondary">
