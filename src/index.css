@@ -14,6 +14,7 @@ a {
   --color-secondary: #2a282a;
   --color-bacround: #d1faff;
   --color-cards: #f7f9f7;
+  --color-like-btn: #007bff;
 }
 body {
   background: var(--color-bacround);
@@ -36,6 +37,10 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
+.like-btn {
+  background-color: var(--color-like-btn);
+  color: var(--color-cards);
+}
 
 /* ------------
 * Flex/Alinment
@@ -43,7 +48,8 @@ body {
 header,
 main,
 footer,
-.app {
+.app,
+.like-comtainer {
   display: flex;
 }
 .app {
@@ -69,4 +75,19 @@ footer {
 }
 h1 {
   margin: auto;
+}
+.like-comtainer {
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+}
+.like-btn {
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+.like-btn:hover {
+  background-color: var(--color-primary);
 }

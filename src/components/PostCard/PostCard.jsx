@@ -10,6 +10,10 @@ export default function PostCard(posts) {
       <img src={posts.posts.sourceUrl} alt={posts.posts.title} />
       <h2>{posts.posts.title}</h2>
       <p>{posts.posts.body}</p>
+      <section>
+        <button className="like-btn">Like</button>
+        <p></p>
+      </section>
     </article>
   );
 }
