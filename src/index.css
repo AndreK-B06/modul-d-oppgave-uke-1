@@ -37,15 +37,24 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-.like-btn {
+#increment {
   background-color: var(--color-like-btn);
   color: var(--color-cards);
+  border: none;
+}
+#decrement,
+#reset {
+  background-color: --;
+  color: var(--color-secondary);
+  border: solid var(--color-secondary) 1px;
 }
 
 /* ------------
 * Flex/Alinment
 ------------ */
 header,
+.conter-Comtainer,
+#display-conter,
 main,
 footer,
 .app,
@@ -76,18 +85,25 @@ footer {
 h1 {
   margin: auto;
 }
-.like-comtainer {
+.conter-Comtainer,
+#display-conter {
   width: 100%;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
-.like-btn {
-  border: none;
+#increment,
+#decrement,
+#reset {
   border-radius: 5px;
+  margin: 10px 5px 5px 10px;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 5px 10px;
+  font-weight: bold;
 }
-.like-btn:hover {
+#increment:hover,
+#decrement:hover,
+#reset:hover {
   background-color: var(--color-primary);
 }

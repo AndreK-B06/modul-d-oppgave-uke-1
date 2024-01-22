@@ -1,7 +1,7 @@
 import "./App.css";
 import PostCardImage from "./components/PostCardImage/PostCardImage";
 import PostCard from "./components/PostCard/PostCard";
-import likeConter from "./components/Like/conter";
+import CounterButtons from "./components/ConterComtainer/conter";
 
 function App() {
   const posts = [
@@ -29,6 +29,7 @@ function App() {
 
       <h1>Welcome to Gosip</h1>
       <main className="main">
+        <CounterButtons></CounterButtons>
         {posts.map((post, i) => {
           return <PostCardImage posts={post} key={i} />;
         })}
