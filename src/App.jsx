@@ -2,6 +2,7 @@ import "./App.css";
 import PostCardImage from "./components/PostCardImage/PostCardImage";
 import PostCard from "./components/PostCard/PostCard";
 import CounterButtons from "./components/ConterComtainer/conter";
+import Filter from "./components/FilterComtainer/filter";
 
 function App() {
   const posts = [
@@ -18,7 +19,21 @@ function App() {
         "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
-
+  const renderPosts = (data) => (
+    <ul>
+      {data.map((post) => (
+        <li key={post.title}>
+          <h3>{post.title}</h3>
+          <p>{post.body}</p>
+          <img
+            src={post.sourceUrl}
+            alt={post.title}
+            style={{ maxWidth: "100%" }}
+          />
+        </li>
+      ))}
+    </ul>
+  );
   return (
     <div className="app">
       <header className="navbar bg-primary text-secondary">
@@ -28,6 +43,11 @@ function App() {
       </header>
 
       <h1>Welcome to Gosip</h1>
+
+      <section>
+        <Filter data={posts} renderFunction={renderPosts} />
+      </section>
+
       <main className="main">
         <CounterButtons></CounterButtons>
         {posts.map((post, i) => {
@@ -37,7 +57,6 @@ function App() {
           return <PostCard posts={post} key={i} />;
         })}
       </main>
-
       <footer className="footer bg-primary text-secondary">
         <a>Image from Unsplash.com</a>
         <p>Made by Kodehodet 2024</p>
