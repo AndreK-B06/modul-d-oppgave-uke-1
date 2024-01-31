@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export default function Filter({data, renderFunction}) => {
+export default function Filter({data, renderFunction}) =>  {
     const [filterValue, setFilterValue] = useState('');
 
     const filteredData = data.filter(item =>
